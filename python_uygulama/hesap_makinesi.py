@@ -23,7 +23,8 @@ while True:
 
     if secim not in ["1","2","3","4"]:
         print("Gecersiz secim")
-    
+    continue 
+
     sayi1 = float(input("Birinci sayiyi girin: "))
     sayi2 = float(input("Ikinci sayiyi girin: "))
 
