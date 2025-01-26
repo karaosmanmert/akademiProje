@@ -1,26 +1,35 @@
 
-def calculator():
-    print("1. Toplama")
-    print("2. Cikarma")
-    print("3. Carpma")
-    print("4. Bolme")
+def topla(a, b):
+    return a + b
+
+def cikar(a, b):
+    return a - b
+
+def carp(a, b):
+    return a * b
+
+def bol(a, b):
+    return a / b
     
-    secim = input("Secim yapiniz (1/2/3/4): ")
-    num1 = float(input("Birinci sayiyi girin: "))
-    num2 = float(input("Ikinci sayiyi girin: "))
-    
+
+while True:
+    print("1. Toplama\n2. Cikarma\n3. Carpma\n4. Bolme\n5. Cikis")
+    secim = input("Secim yapiniz: ")
+
+    if secim == '5':
+        break
+
+    sayi1 = float(input("Birinci sayiyi girin: "))
+    sayi2 = float(input("Ikinci sayiyi girin: "))
+
     if secim == '1':
-        print("Sonuc:", num1 + num2)
+        print("Sonuc:", sayi1 + sayi2)
     elif secim == '2':
-        print("Sonuc:", num1 - num2)
+        print("Sonuc:", sayi1 - sayi2)
     elif secim == '3':
-        print("Sonuc:", num1 * num2)
+        print("Sonuc:", sayi1 * sayi2)
     elif secim == '4':
-        if num2 != 0:
-            print("Sonuc:", num1 / num2)
-        else:
-            print("Hata: Bolme işlemi sifira bolunemez.")
+        print("Sonuc:", sayi1 / sayi2)
     else:
         print("Gecersiz secim.")
 
-calculator()
