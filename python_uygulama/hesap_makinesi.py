@@ -29,7 +29,10 @@ while True:
     elif secim == '3':
         print("Sonuc:", sayi1 * sayi2)
     elif secim == '4':
-        print("Sonuc:", sayi1 / sayi2)
+        if sayi2 != 0:
+            print("Sonuc:", sayi1 / sayi2)
+        else:
+            print("0'a bolme islemi yapilamaz!")
     else:
         print("Gecersiz secim.")
 
