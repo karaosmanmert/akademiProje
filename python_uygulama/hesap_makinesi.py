@@ -18,12 +18,11 @@ while True:
     print("1. Toplama\n2. Cikarma\n3. Carpma\n4. Bolme\n5. Cikis")
     secim = input("Secim yapiniz: ")
 
-    if secim == '5':
+    if secim == "5" or " ":
         break
 
     if secim not in ["1","2","3","4"]:
         print("Gecersiz secim")
-    continue 
 
     sayi1 = float(input("Birinci sayiyi girin: "))
     sayi2 = float(input("Ikinci sayiyi girin: "))
